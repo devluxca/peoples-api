@@ -1,0 +1,20 @@
+<table class="table mt-5">
+    <thead>
+      <tr>
+        <th scope="col" class="text-center">ID</th>
+        <th scope="col" class="text-center">Nome</th>
+        <th scope="col" class="text-center">E-mail</th>
+        <th scope="col" class="text-center">ID Franqueado</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for people in peoples_list %}
+      <tr>
+        <th scope="row" class="text-center">{{people.id}}</th>
+        <td class="text-center">{{people.full_name}}</td>
+        <td class="text-center">{{people.email}}</td>
+        <td class="text-center">{{people.franchisor_id}}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+</table>

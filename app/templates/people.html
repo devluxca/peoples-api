@@ -1,0 +1,12 @@
+{% extends "layout/layout.html" %}
+
+{% block title %}Pessoas{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h3 class="text-center">Lista de pessoas</h3>
+    {% include "table/people_table.html" %}
+    
+    {% include "pagination.html" %}
+</div>
+{% endblock %}

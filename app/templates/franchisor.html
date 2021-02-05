@@ -1,0 +1,14 @@
+{% extends "layout/layout.html" %}
+
+{% block title %}Franqueadores{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h3 class="text-center">Lista de franqueados</h3>
+    <div class="container-fluid border">
+        {% include "table/franchisor_table.html" %}
+    </div>
+    
+    {% include "pagination.html" %}
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+<table class="table mt-5">
+    <thead>
+      <tr>
+        <th scope="col" class="text-center">ID</th>
+        <th scope="col" class="text-center">Nome</th>
+      </tr>
+    </thead>
+    <tbody>
+    {% for franchisor in franchisor_list %}
+      <tr>
+        <th scope="row" class="text-center">{{franchisor.id}}</th>
+        <td class="text-center">{{franchisor.name}}</td>
+      </tr>
+    {% endfor %}
+    </tbody>
+</table>
